@@ -96,11 +96,10 @@
 			children = (
 				B2E848AA28F6EECA0019DC20 /* AppDelegate.swift */,
 				B2E848AC28F6EECA0019DC20 /* SceneDelegate.swift */,
-				B2E848AE28F6EECA0019DC20 /* ViewController.swift */,
-				B2E848B028F6EECB0019DC20 /* Main.storyboard */,
-				B2E848B328F6EECC0019DC20 /* Assets.xcassets */,
-				B2E848B528F6EECC0019DC20 /* LaunchScreen.storyboard */,
-				B2E848B828F6EECC0019DC20 /* Info.plist */,
+				B2E848DA28F6F2570019DC20 /* Scenes */,
+				B2E848DB28F6F27D0019DC20 /* Models */,
+				B2E848DC28F6F2840019DC20 /* Common */,
+				B2E848DD28F6F2910019DC20 /* Resources */,
 			);
 			path = "Guidomia-iOS";
 			sourceTree = "<group>";
@@ -111,6 +110,47 @@
 				B2E848C128F6EECC0019DC20 /* Guidomia_iOSTests.swift */,
 			);
 			path = "Guidomia-iOSTests";
+			sourceTree = "<group>";
+		};
+		B2E848DA28F6F2570019DC20 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				B2E848DE28F6F48E0019DC20 /* Home */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		B2E848DB28F6F27D0019DC20 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B2E848DC28F6F2840019DC20 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B2E848DD28F6F2910019DC20 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B2E848B828F6EECC0019DC20 /* Info.plist */,
+				B2E848B328F6EECC0019DC20 /* Assets.xcassets */,
+				B2E848B528F6EECC0019DC20 /* LaunchScreen.storyboard */,
+				B2E848B028F6EECB0019DC20 /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B2E848DE28F6F48E0019DC20 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B2E848AE28F6EECA0019DC20 /* ViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -422,7 +462,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Guidomia-iOS/Info.plist";
+				INFOPLIST_FILE = "Guidomia-iOS/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -449,7 +489,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Guidomia-iOS/Info.plist";
+				INFOPLIST_FILE = "Guidomia-iOS/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
