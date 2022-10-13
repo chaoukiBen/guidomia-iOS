@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		B2E848AB28F6EECA0019DC20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E848AA28F6EECA0019DC20 /* AppDelegate.swift */; };
 		B2E848AD28F6EECA0019DC20 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E848AC28F6EECA0019DC20 /* SceneDelegate.swift */; };
-		B2E848AF28F6EECA0019DC20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E848AE28F6EECA0019DC20 /* ViewController.swift */; };
+		B2E848AF28F6EECA0019DC20 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E848AE28F6EECA0019DC20 /* HomeViewController.swift */; };
 		B2E848B228F6EECB0019DC20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2E848B028F6EECB0019DC20 /* Main.storyboard */; };
 		B2E848B428F6EECC0019DC20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2E848B328F6EECC0019DC20 /* Assets.xcassets */; };
 		B2E848B728F6EECC0019DC20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2E848B528F6EECC0019DC20 /* LaunchScreen.storyboard */; };
 		B2E848C228F6EECC0019DC20 /* Guidomia_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E848C128F6EECC0019DC20 /* Guidomia_iOSTests.swift */; };
 		B2E848E028F6F6E50019DC20 /* car_list.json in Resources */ = {isa = PBXBuildFile; fileRef = B2E848DF28F6F6E50019DC20 /* car_list.json */; };
+		B2E848E228F815D20019DC20 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E848E128F815D20019DC20 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +39,7 @@
 		B2E848A728F6EECA0019DC20 /* Guidomia-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guidomia-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2E848AA28F6EECA0019DC20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2E848AC28F6EECA0019DC20 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B2E848AE28F6EECA0019DC20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B2E848AE28F6EECA0019DC20 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B2E848B128F6EECB0019DC20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B2E848B328F6EECC0019DC20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2E848B628F6EECC0019DC20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		B2E848C128F6EECC0019DC20 /* Guidomia_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guidomia_iOSTests.swift; sourceTree = "<group>"; };
 		B2E848C728F6EECC0019DC20 /* Guidomia-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Guidomia-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2E848DF28F6F6E50019DC20 /* car_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = car_list.json; sourceTree = "<group>"; };
+		B2E848E128F815D20019DC20 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,7 +153,8 @@
 		B2E848DE28F6F48E0019DC20 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				B2E848AE28F6EECA0019DC20 /* ViewController.swift */,
+				B2E848AE28F6EECA0019DC20 /* HomeViewController.swift */,
+				B2E848E128F815D20019DC20 /* HomeViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -288,9 +291,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2E848AF28F6EECA0019DC20 /* ViewController.swift in Sources */,
+				B2E848AF28F6EECA0019DC20 /* HomeViewController.swift in Sources */,
 				B2E848AB28F6EECA0019DC20 /* AppDelegate.swift in Sources */,
 				B2E848AD28F6EECA0019DC20 /* SceneDelegate.swift in Sources */,
+				B2E848E228F815D20019DC20 /* HomeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
