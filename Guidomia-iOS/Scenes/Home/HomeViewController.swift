@@ -24,12 +24,12 @@ class HomeViewController: UIViewController {
         if viewModel == nil {
             viewModel = HomeViewModel()
         }
-        print(viewModel.fetchLocalCars())
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setupNavBar()
+        registerTableView()
     }
 
     // MARK: - Local Helpers
@@ -43,15 +43,41 @@ class HomeViewController: UIViewController {
         navigationController?.navigationBar.scrollEdgeAppearance = navigationController?.navigationBar.standardAppearance
         self.title = "Guidomia"
     }
+
+    private func registerTableView() {
+        tableView.register(UINib(nibName: HeaderCell.identifier, bundle: nil), forCellReuseIdentifier: HeaderCell.identifier)
+        tableView.register(UINib(nibName: FilterCell.identifier, bundle: nil), forCellReuseIdentifier: FilterCell.identifier)
+        tableView.register(UINib(nibName: CarCell.identifier, bundle: nil), forCellReuseIdentifier: CarCell.identifier)
+    }
 }
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return viewModel.items.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
+        let item = viewModel.items[indexPath.row]
+        switch item.type {
+        case .header:
+            if let cell = tableView.dequeueReusableCell(withIdentifier: HeaderCell.identifier, for: indexPath) as? HeaderCell {
+                cell.item = item as? HeaderViewModelItem
+                return cell
+            }
+        case .filter:
+            if let cell = tableView.dequeueReusableCell(withIdentifier: FilterCell.identifier, for: indexPath) as? FilterCell {
+                cell.item = item as? FilterViewModelItem
+                return cell
+            }
+        case .car:
+            if let cell = tableView.dequeueReusableCell(withIdentifier: CarCell.identifier, for: indexPath) as? CarCell {
+                cell.item = item as? CarViewModelItem
+                return cell
+            }
+        }
+
         return UITableViewCell()
     }
 }

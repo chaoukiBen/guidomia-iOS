@@ -18,6 +18,12 @@
 		B2E848E228F815D20019DC20 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E848E128F815D20019DC20 /* HomeViewModel.swift */; };
 		B2E848E428F818920019DC20 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E848E328F818920019DC20 /* Car.swift */; };
 		B2E848E728F819640019DC20 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E848E628F819640019DC20 /* NetworkService.swift */; };
+		B2E848ED28F81EF80019DC20 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E848EB28F81EF80019DC20 /* HeaderCell.swift */; };
+		B2E848EE28F81EF80019DC20 /* HeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2E848EC28F81EF80019DC20 /* HeaderCell.xib */; };
+		B2E848F128F81F160019DC20 /* FilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E848EF28F81F160019DC20 /* FilterCell.swift */; };
+		B2E848F228F81F160019DC20 /* FilterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2E848F028F81F160019DC20 /* FilterCell.xib */; };
+		B2E848F528F81F2A0019DC20 /* CarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E848F328F81F2A0019DC20 /* CarCell.swift */; };
+		B2E848F628F81F2A0019DC20 /* CarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2E848F428F81F2A0019DC20 /* CarCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,12 @@
 		B2E848E128F815D20019DC20 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		B2E848E328F818920019DC20 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		B2E848E628F819640019DC20 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		B2E848EB28F81EF80019DC20 /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
+		B2E848EC28F81EF80019DC20 /* HeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCell.xib; sourceTree = "<group>"; };
+		B2E848EF28F81F160019DC20 /* FilterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCell.swift; sourceTree = "<group>"; };
+		B2E848F028F81F160019DC20 /* FilterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterCell.xib; sourceTree = "<group>"; };
+		B2E848F328F81F2A0019DC20 /* CarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCell.swift; sourceTree = "<group>"; };
+		B2E848F428F81F2A0019DC20 /* CarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +173,7 @@
 			children = (
 				B2E848AE28F6EECA0019DC20 /* HomeViewController.swift */,
 				B2E848E128F815D20019DC20 /* HomeViewModel.swift */,
+				B2E848E828F81EB50019DC20 /* Cells */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -171,6 +184,19 @@
 				B2E848E628F819640019DC20 /* NetworkService.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		B2E848E828F81EB50019DC20 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B2E848EB28F81EF80019DC20 /* HeaderCell.swift */,
+				B2E848EC28F81EF80019DC20 /* HeaderCell.xib */,
+				B2E848EF28F81F160019DC20 /* FilterCell.swift */,
+				B2E848F028F81F160019DC20 /* FilterCell.xib */,
+				B2E848F328F81F2A0019DC20 /* CarCell.swift */,
+				B2E848F428F81F2A0019DC20 /* CarCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,8 +303,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2E848EE28F81EF80019DC20 /* HeaderCell.xib in Resources */,
+				B2E848F628F81F2A0019DC20 /* CarCell.xib in Resources */,
 				B2E848B728F6EECC0019DC20 /* LaunchScreen.storyboard in Resources */,
 				B2E848B428F6EECC0019DC20 /* Assets.xcassets in Resources */,
+				B2E848F228F81F160019DC20 /* FilterCell.xib in Resources */,
 				B2E848E028F6F6E50019DC20 /* car_list.json in Resources */,
 				B2E848B228F6EECB0019DC20 /* Main.storyboard in Resources */,
 			);
@@ -306,11 +335,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2E848AF28F6EECA0019DC20 /* HomeViewController.swift in Sources */,
+				B2E848F128F81F160019DC20 /* FilterCell.swift in Sources */,
 				B2E848AB28F6EECA0019DC20 /* AppDelegate.swift in Sources */,
+				B2E848F528F81F2A0019DC20 /* CarCell.swift in Sources */,
 				B2E848E428F818920019DC20 /* Car.swift in Sources */,
 				B2E848AD28F6EECA0019DC20 /* SceneDelegate.swift in Sources */,
 				B2E848E728F819640019DC20 /* NetworkService.swift in Sources */,
 				B2E848E228F815D20019DC20 /* HomeViewModel.swift in Sources */,
+				B2E848ED28F81EF80019DC20 /* HeaderCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
