@@ -13,10 +13,13 @@ class HomeViewModel {
 
     var items = [HomeViewModelItem]()
     var cars: [Car]?
+    var selectedMakeFilter = "Any Make"
+    var selectedModelFilter = "Any Model"
+    var filterType: HomeFilterType = .make
 
     // MARK: Init
 
-    init() {
+    func refreshViewModel() {
         items = [HomeViewModelItem]()
 
         // Load header
@@ -24,7 +27,7 @@ class HomeViewModel {
         items.append(headerItem)
 
         // Load filter
-        let filterItem = FilterViewModelItem()
+        let filterItem = FilterViewModelItem(makeFilter: selectedMakeFilter, modelFilter: selectedModelFilter)
         items.append(filterItem)
 
         // Load cars
@@ -32,7 +35,22 @@ class HomeViewModel {
             if result {
                 self.cars?.forEach({ car in
                     let carItem = CarViewModelItem(car: car)
-                    self.items.append(carItem)
+
+                    if self.selectedMakeFilter == "Any Make" && self.selectedModelFilter == "Any Model" {
+                        self.items.append(carItem)
+                    } else if self.selectedMakeFilter != "Any Make" && self.selectedModelFilter != "Any Model" {
+                        if car.make == self.selectedMakeFilter && car.model == self.selectedModelFilter {
+                            self.items.append(carItem)
+                        }
+                    } else if self.selectedMakeFilter != "Any Make" {
+                        if car.make == self.selectedMakeFilter {
+                            self.items.append(carItem)
+                        }
+                    } else if self.selectedModelFilter != "Any Model" {
+                        if car.model == self.selectedModelFilter {
+                            self.items.append(carItem)
+                        }
+                    }
                 })
             }
         }
@@ -40,13 +58,21 @@ class HomeViewModel {
 
     // MARK: - Fetch data
 
-    func fetchLocalCars(completion: @escaping (Bool) -> Void ) {
+    private func fetchLocalCars(completion: @escaping (Bool) -> Void ) {
         cars = []
         if let _cars = NetworkService.loadJson(filename: "car_list"), _cars.count > 0 {
             cars = _cars
             completion(true)
         }
         completion(false)
+    }
+
+    func getValuesFrom(property: String) -> [String] {
+        var makes = [String]()
+        self.cars?.forEach({ car in
+            makes.append(car[property] as! String)
+        })
+        return makes
     }
 }
 
@@ -59,3 +85,9 @@ enum HomeViewModelItemType {
     case filter
     case car
 }
+
+enum HomeFilterType {
+    case make
+    case model
+}
+

@@ -7,7 +7,9 @@
 
 import Foundation
 
-struct Car: Decodable {
+// FYI: this is used to access the property by name in the func "getValuesFrom"
+@objcMembers
+class Car: NSObject, Decodable {
     let consList: [String]
     let customerPrice: Float
     let make: String
@@ -15,4 +17,8 @@ struct Car: Decodable {
     let model: String
     let prosList: [String]
     let rating: Int
+
+    subscript(key: String) -> Any? {
+        return self.value(forKey: key)
+    }
 }

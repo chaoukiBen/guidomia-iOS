@@ -45,6 +45,9 @@
                                         <integer key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onSelectModel:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="fx2-K0-UlY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jf7-Dc-pGH">
                                 <rect key="frame" x="15" y="51" width="250" height="31"/>
@@ -62,6 +65,9 @@
                                         <integer key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onSelectMake:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="t1S-Zr-3gM"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" name="darkGray"/>
@@ -94,6 +100,10 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" name="orange"/>
+            <connections>
+                <outlet property="makeBtn" destination="Jf7-Dc-pGH" id="SGB-1R-Dde"/>
+                <outlet property="modelBtn" destination="Ssv-kb-61N" id="8AL-uF-G2o"/>
+            </connections>
             <point key="canvasLocation" x="198.55072463768118" y="16.741071428571427"/>
         </tableViewCell>
     </objects>

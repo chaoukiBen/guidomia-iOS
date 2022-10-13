@@ -25,6 +25,7 @@
 		B2E848F528F81F2A0019DC20 /* CarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E848F328F81F2A0019DC20 /* CarCell.swift */; };
 		B2E848F628F81F2A0019DC20 /* CarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2E848F428F81F2A0019DC20 /* CarCell.xib */; };
 		B2E848F828F83B3F0019DC20 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E848F728F83B3F0019DC20 /* Utilities.swift */; };
+		B2E848FC28F84A0E0019DC20 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E848FB28F84A0E0019DC20 /* PickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		B2E848F328F81F2A0019DC20 /* CarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCell.swift; sourceTree = "<group>"; };
 		B2E848F428F81F2A0019DC20 /* CarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarCell.xib; sourceTree = "<group>"; };
 		B2E848F728F83B3F0019DC20 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		B2E848FB28F84A0E0019DC20 /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				B2E848F728F83B3F0019DC20 /* Utilities.swift */,
+				B2E848F928F849BF0019DC20 /* UIComponents */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -200,6 +203,22 @@
 				B2E848F428F81F2A0019DC20 /* CarCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		B2E848F928F849BF0019DC20 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				B2E848FA28F849E80019DC20 /* PickerView */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		B2E848FA28F849E80019DC20 /* PickerView */ = {
+			isa = PBXGroup;
+			children = (
+				B2E848FB28F84A0E0019DC20 /* PickerViewController.swift */,
+			);
+			path = PickerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,6 +363,7 @@
 				B2E848E428F818920019DC20 /* Car.swift in Sources */,
 				B2E848AD28F6EECA0019DC20 /* SceneDelegate.swift in Sources */,
 				B2E848E728F819640019DC20 /* NetworkService.swift in Sources */,
+				B2E848FC28F84A0E0019DC20 /* PickerViewController.swift in Sources */,
 				B2E848E228F815D20019DC20 /* HomeViewModel.swift in Sources */,
 				B2E848F828F83B3F0019DC20 /* Utilities.swift in Sources */,
 				B2E848ED28F81EF80019DC20 /* HeaderCell.swift in Sources */,

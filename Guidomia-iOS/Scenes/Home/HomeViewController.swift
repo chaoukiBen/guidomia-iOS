@@ -23,6 +23,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         if viewModel == nil {
             viewModel = HomeViewModel()
+            viewModel.refreshViewModel()
         }
     }
 
@@ -49,6 +50,11 @@ class HomeViewController: UIViewController {
         tableView.register(UINib(nibName: FilterCell.identifier, bundle: nil), forCellReuseIdentifier: FilterCell.identifier)
         tableView.register(UINib(nibName: CarCell.identifier, bundle: nil), forCellReuseIdentifier: CarCell.identifier)
     }
+
+    private func openPickerScreen(data: [String]) {
+        let pickerViewController = PickerViewController.create(data: data, delegate: self)
+        self.present(pickerViewController, animated: true)
+    }
 }
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
@@ -69,6 +75,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         case .filter:
             if let cell = tableView.dequeueReusableCell(withIdentifier: FilterCell.identifier, for: indexPath) as? FilterCell {
                 cell.item = item as? FilterViewModelItem
+                cell.delegate = self
                 return cell
             }
         case .car:
@@ -79,5 +86,34 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         }
 
         return UITableViewCell()
+    }
+}
+
+extension HomeViewController: FilterCellProtocol {
+    func onSelectMake() {
+        viewModel.filterType = .make
+        var values = ["Any Make"]
+        values.append(contentsOf: viewModel.getValuesFrom(property: "make"))
+        openPickerScreen(data: values)
+    }
+
+    func onSelectModel() {
+        viewModel.filterType = .model
+        var values = ["Any Model"]
+        values.append(contentsOf: viewModel.getValuesFrom(property: "model"))
+        openPickerScreen(data: values)
+    }
+}
+
+extension HomeViewController: PickerViewProtocol {
+    func didSelect(element: String) {
+        switch viewModel.filterType {
+        case .make:
+            viewModel.selectedMakeFilter = element
+        case .model:
+            viewModel.selectedModelFilter = element
+        }
+        viewModel.refreshViewModel()
+        self.tableView.reloadData()
     }
 }

@@ -16,7 +16,6 @@ class HeaderCell: UITableViewCell {
     // MARK: Properties
 
     var item: HeaderViewModelItem?
-
 }
 
 class HeaderViewModelItem: HomeViewModelItem {
