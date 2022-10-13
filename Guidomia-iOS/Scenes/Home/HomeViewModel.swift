@@ -7,4 +7,9 @@
 
 import Foundation
 
-class HomeViewModel { }
+class HomeViewModel {
+
+    func fetchLocalCars() -> [Car]? {
+       return NetworkService.loadJson(filename: "car_list")
+    }
+}

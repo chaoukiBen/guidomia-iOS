@@ -13,10 +13,22 @@ class HomeViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
 
+    // MARK: - Properties
+
+    var viewModel: HomeViewModel!
+
     // MARK: - Life Cycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        if viewModel == nil {
+            viewModel = HomeViewModel()
+        }
+        print(viewModel.fetchLocalCars())
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         setupNavBar()
     }
 

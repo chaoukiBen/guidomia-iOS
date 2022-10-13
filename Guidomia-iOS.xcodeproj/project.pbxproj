@@ -16,6 +16,8 @@
 		B2E848C228F6EECC0019DC20 /* Guidomia_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E848C128F6EECC0019DC20 /* Guidomia_iOSTests.swift */; };
 		B2E848E028F6F6E50019DC20 /* car_list.json in Resources */ = {isa = PBXBuildFile; fileRef = B2E848DF28F6F6E50019DC20 /* car_list.json */; };
 		B2E848E228F815D20019DC20 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E848E128F815D20019DC20 /* HomeViewModel.swift */; };
+		B2E848E428F818920019DC20 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E848E328F818920019DC20 /* Car.swift */; };
+		B2E848E728F819640019DC20 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E848E628F819640019DC20 /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		B2E848C728F6EECC0019DC20 /* Guidomia-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Guidomia-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2E848DF28F6F6E50019DC20 /* car_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = car_list.json; sourceTree = "<group>"; };
 		B2E848E128F815D20019DC20 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		B2E848E328F818920019DC20 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		B2E848E628F819640019DC20 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,7 @@
 				B2E848AC28F6EECA0019DC20 /* SceneDelegate.swift */,
 				B2E848DA28F6F2570019DC20 /* Scenes */,
 				B2E848DB28F6F27D0019DC20 /* Models */,
+				B2E848E528F8193A0019DC20 /* Networking */,
 				B2E848DC28F6F2840019DC20 /* Common */,
 				B2E848DD28F6F2910019DC20 /* Resources */,
 			);
@@ -127,6 +132,7 @@
 		B2E848DB28F6F27D0019DC20 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B2E848E328F818920019DC20 /* Car.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -157,6 +163,14 @@
 				B2E848E128F815D20019DC20 /* HomeViewModel.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		B2E848E528F8193A0019DC20 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B2E848E628F819640019DC20 /* NetworkService.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,7 +307,9 @@
 			files = (
 				B2E848AF28F6EECA0019DC20 /* HomeViewController.swift in Sources */,
 				B2E848AB28F6EECA0019DC20 /* AppDelegate.swift in Sources */,
+				B2E848E428F818920019DC20 /* Car.swift in Sources */,
 				B2E848AD28F6EECA0019DC20 /* SceneDelegate.swift in Sources */,
+				B2E848E728F819640019DC20 /* NetworkService.swift in Sources */,
 				B2E848E228F815D20019DC20 /* HomeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
