@@ -31,7 +31,7 @@ class HomeViewModel {
         fetchLocalCars() { result in
             if result {
                 self.cars?.forEach({ car in
-                    let carItem = CarViewModelItem()
+                    let carItem = CarViewModelItem(car: car)
                     self.items.append(carItem)
                 })
             }
