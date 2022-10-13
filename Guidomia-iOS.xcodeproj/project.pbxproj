@@ -9,12 +9,23 @@
 /* Begin PBXBuildFile section */
 		B2E848AB28F6EECA0019DC20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E848AA28F6EECA0019DC20 /* AppDelegate.swift */; };
 		B2E848AD28F6EECA0019DC20 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E848AC28F6EECA0019DC20 /* SceneDelegate.swift */; };
-		B2E848AF28F6EECA0019DC20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E848AE28F6EECA0019DC20 /* ViewController.swift */; };
+		B2E848AF28F6EECA0019DC20 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E848AE28F6EECA0019DC20 /* HomeViewController.swift */; };
 		B2E848B228F6EECB0019DC20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2E848B028F6EECB0019DC20 /* Main.storyboard */; };
 		B2E848B428F6EECC0019DC20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2E848B328F6EECC0019DC20 /* Assets.xcassets */; };
 		B2E848B728F6EECC0019DC20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2E848B528F6EECC0019DC20 /* LaunchScreen.storyboard */; };
 		B2E848C228F6EECC0019DC20 /* Guidomia_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E848C128F6EECC0019DC20 /* Guidomia_iOSTests.swift */; };
 		B2E848E028F6F6E50019DC20 /* car_list.json in Resources */ = {isa = PBXBuildFile; fileRef = B2E848DF28F6F6E50019DC20 /* car_list.json */; };
+		B2E848E228F815D20019DC20 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E848E128F815D20019DC20 /* HomeViewModel.swift */; };
+		B2E848E428F818920019DC20 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E848E328F818920019DC20 /* Car.swift */; };
+		B2E848E728F819640019DC20 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E848E628F819640019DC20 /* NetworkService.swift */; };
+		B2E848ED28F81EF80019DC20 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E848EB28F81EF80019DC20 /* HeaderCell.swift */; };
+		B2E848EE28F81EF80019DC20 /* HeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2E848EC28F81EF80019DC20 /* HeaderCell.xib */; };
+		B2E848F128F81F160019DC20 /* FilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E848EF28F81F160019DC20 /* FilterCell.swift */; };
+		B2E848F228F81F160019DC20 /* FilterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2E848F028F81F160019DC20 /* FilterCell.xib */; };
+		B2E848F528F81F2A0019DC20 /* CarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E848F328F81F2A0019DC20 /* CarCell.swift */; };
+		B2E848F628F81F2A0019DC20 /* CarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2E848F428F81F2A0019DC20 /* CarCell.xib */; };
+		B2E848F828F83B3F0019DC20 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E848F728F83B3F0019DC20 /* Utilities.swift */; };
+		B2E848FC28F84A0E0019DC20 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E848FB28F84A0E0019DC20 /* PickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +49,7 @@
 		B2E848A728F6EECA0019DC20 /* Guidomia-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guidomia-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2E848AA28F6EECA0019DC20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2E848AC28F6EECA0019DC20 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B2E848AE28F6EECA0019DC20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B2E848AE28F6EECA0019DC20 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B2E848B128F6EECB0019DC20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B2E848B328F6EECC0019DC20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2E848B628F6EECC0019DC20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +58,17 @@
 		B2E848C128F6EECC0019DC20 /* Guidomia_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guidomia_iOSTests.swift; sourceTree = "<group>"; };
 		B2E848C728F6EECC0019DC20 /* Guidomia-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Guidomia-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2E848DF28F6F6E50019DC20 /* car_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = car_list.json; sourceTree = "<group>"; };
+		B2E848E128F815D20019DC20 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		B2E848E328F818920019DC20 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		B2E848E628F819640019DC20 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		B2E848EB28F81EF80019DC20 /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
+		B2E848EC28F81EF80019DC20 /* HeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCell.xib; sourceTree = "<group>"; };
+		B2E848EF28F81F160019DC20 /* FilterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCell.swift; sourceTree = "<group>"; };
+		B2E848F028F81F160019DC20 /* FilterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterCell.xib; sourceTree = "<group>"; };
+		B2E848F328F81F2A0019DC20 /* CarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCell.swift; sourceTree = "<group>"; };
+		B2E848F428F81F2A0019DC20 /* CarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarCell.xib; sourceTree = "<group>"; };
+		B2E848F728F83B3F0019DC20 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		B2E848FB28F84A0E0019DC20 /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +122,7 @@
 				B2E848AC28F6EECA0019DC20 /* SceneDelegate.swift */,
 				B2E848DA28F6F2570019DC20 /* Scenes */,
 				B2E848DB28F6F27D0019DC20 /* Models */,
+				B2E848E528F8193A0019DC20 /* Networking */,
 				B2E848DC28F6F2840019DC20 /* Common */,
 				B2E848DD28F6F2910019DC20 /* Resources */,
 			);
@@ -125,6 +148,7 @@
 		B2E848DB28F6F27D0019DC20 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B2E848E328F818920019DC20 /* Car.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -132,6 +156,8 @@
 		B2E848DC28F6F2840019DC20 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				B2E848F728F83B3F0019DC20 /* Utilities.swift */,
+				B2E848F928F849BF0019DC20 /* UIComponents */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -151,9 +177,48 @@
 		B2E848DE28F6F48E0019DC20 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				B2E848AE28F6EECA0019DC20 /* ViewController.swift */,
+				B2E848AE28F6EECA0019DC20 /* HomeViewController.swift */,
+				B2E848E128F815D20019DC20 /* HomeViewModel.swift */,
+				B2E848E828F81EB50019DC20 /* Cells */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		B2E848E528F8193A0019DC20 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B2E848E628F819640019DC20 /* NetworkService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		B2E848E828F81EB50019DC20 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B2E848EB28F81EF80019DC20 /* HeaderCell.swift */,
+				B2E848EC28F81EF80019DC20 /* HeaderCell.xib */,
+				B2E848EF28F81F160019DC20 /* FilterCell.swift */,
+				B2E848F028F81F160019DC20 /* FilterCell.xib */,
+				B2E848F328F81F2A0019DC20 /* CarCell.swift */,
+				B2E848F428F81F2A0019DC20 /* CarCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		B2E848F928F849BF0019DC20 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				B2E848FA28F849E80019DC20 /* PickerView */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		B2E848FA28F849E80019DC20 /* PickerView */ = {
+			isa = PBXGroup;
+			children = (
+				B2E848FB28F84A0E0019DC20 /* PickerViewController.swift */,
+			);
+			path = PickerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,8 +325,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2E848EE28F81EF80019DC20 /* HeaderCell.xib in Resources */,
+				B2E848F628F81F2A0019DC20 /* CarCell.xib in Resources */,
 				B2E848B728F6EECC0019DC20 /* LaunchScreen.storyboard in Resources */,
 				B2E848B428F6EECC0019DC20 /* Assets.xcassets in Resources */,
+				B2E848F228F81F160019DC20 /* FilterCell.xib in Resources */,
 				B2E848E028F6F6E50019DC20 /* car_list.json in Resources */,
 				B2E848B228F6EECB0019DC20 /* Main.storyboard in Resources */,
 			);
@@ -288,9 +356,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2E848AF28F6EECA0019DC20 /* ViewController.swift in Sources */,
+				B2E848AF28F6EECA0019DC20 /* HomeViewController.swift in Sources */,
+				B2E848F128F81F160019DC20 /* FilterCell.swift in Sources */,
 				B2E848AB28F6EECA0019DC20 /* AppDelegate.swift in Sources */,
+				B2E848F528F81F2A0019DC20 /* CarCell.swift in Sources */,
+				B2E848E428F818920019DC20 /* Car.swift in Sources */,
 				B2E848AD28F6EECA0019DC20 /* SceneDelegate.swift in Sources */,
+				B2E848E728F819640019DC20 /* NetworkService.swift in Sources */,
+				B2E848FC28F84A0E0019DC20 /* PickerViewController.swift in Sources */,
+				B2E848E228F815D20019DC20 /* HomeViewModel.swift in Sources */,
+				B2E848F828F83B3F0019DC20 /* Utilities.swift in Sources */,
+				B2E848ED28F81EF80019DC20 /* HeaderCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
